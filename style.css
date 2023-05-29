@@ -1,0 +1,79 @@
+.grid__card{
+    display: grid;
+    grid-template-columns: repeat(3 , 300px);
+    grid-auto-rows: minmax(200px, auto);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+}
+
+.grid__card-1{
+    background-color: hsl(31, 77%, 52%);
+    grid-row: 1/3;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+
+.grid__card-2{
+    background-color: hsl(184, 100%, 22%);
+    grid-row: 1/3;
+}
+
+.grid__card-3{
+    background-color: hsl(179, 100%, 13%);
+    grid-row: 1/3;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.card__img{
+    margin-bottom: 5px;
+}
+
+.card__details{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: Thin 100;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+p{
+    margin-bottom: 123px;
+}
+
+.btn{
+    padding: 15px  40px;
+    border-radius: 30px;
+    border-style: none;
+    font-family: 'Lexend Deca', sans-serif}
+
+
+.text-color-1{
+    color: hsl(31, 77%, 52%);
+
+}
+
+.text-color-2{
+    color: hsl(184, 100%, 22%);
+}
+
+.text-color-3{
+   color: hsl(179, 100%, 13%);
+}
+
+.grid__pad{
+    padding: 51px;
+}

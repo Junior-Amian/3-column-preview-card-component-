@@ -1,29 +1,28 @@
+body{
+    margin: 0 8px;
+}
+
 .grid__card{
     display: grid;
-    grid-template-columns: repeat(3 , 300px);
-    grid-auto-rows: minmax(200px, auto);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    
+    grid-template-columns: repeat( 3 , minmax(250px , 350px));
+   justify-content: center;
+   align-content: center;
+   height: 100vh;
 }
+
 
 .grid__card-1{
     background-color: hsl(31, 77%, 52%);
-    grid-row: 1/3;
     border-top-left-radius:10px;
     border-bottom-left-radius: 10px;
 }
 
 .grid__card-2{
     background-color: hsl(184, 100%, 22%);
-    grid-row: 1/3;
 }
 
 .grid__card-3{
     background-color: hsl(179, 100%, 13%);
-    grid-row: 1/3;
     border-top-right-radius:10px;
     border-bottom-right-radius: 10px;
 }
@@ -58,7 +57,15 @@ p{
     padding: 15px  40px;
     border-radius: 30px;
     border-style: none;
-    font-family: 'Lexend Deca', sans-serif}
+    font-family: 'Lexend Deca', sans-serif;
+    transition: all .2s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+}
 
 
 .text-color-1{
@@ -76,4 +83,26 @@ p{
 
 .grid__pad{
     padding: 51px;
+}
+
+@media screen and (max-width:765px) {
+    .grid__card{
+        grid-template-columns: auto;
+        height: auto;
+       padding: 1rem 0;
+    }
+
+    p{
+        margin-bottom: 30px;
+    }
+
+    .grid__card-1{
+        border-top-left-radius:10px;
+        border-top-right-radius: 10px;    border-bottom-left-radius: 0px;
+    }
+    
+    .grid__card-3{
+        border-bottom-left-radius:10px;
+        border-top-right-radius: 0px;    border-bottom-right-radius: 10px;
+    }
 }
